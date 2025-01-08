@@ -9,3 +9,4 @@
 - [nm-applet](https://github.com/pavlix/nm-applet)
 - [blueman-applet](https://github.com/blueman-project/blueman)
 - [swayidle](https://github.com/swaywm/swayidle)
+- [swaylock](https://github.com/swaywm/swaylock)
