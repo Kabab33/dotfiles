@@ -83,6 +83,18 @@ verbs: [
         leave_broot: false
         execution: "git difftool -y {file}"
     }
+    {
+        invocation: yadm_add
+        shortcut: ya
+        leave_broot: false
+        execution: "yadm add {file}"
+    }
+    {
+        invocation: yadm_push
+        shortcut: yp
+        leave_broot: false
+        execution: "yadm commit -a && yadm push"
+    }
 
     # On ctrl-b, propose the creation of a copy of the selection.
     # While this might occasionally be useful, this verb is mostly here
