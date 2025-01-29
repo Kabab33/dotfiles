@@ -61,6 +61,11 @@ verbs: [
     leave_broot: false
     }
     {
+    invocation: play
+    execution: "mpv {file}"
+    leave_broot: false
+    }
+    {
     invocation: carbonyl {url}
     shortcut: cl
     execution: "carbonyl {url}"
