@@ -20,8 +20,7 @@ echo "'---'   '---'        \`--'---'   ---\`-' |  ,     .-./---\`-'  ---\`-'   "
 echo "                                        \`--\`---'                     ";
 echo "                                                                     ";
 
-programmas_installerern() {
-if command yayd --version &>/dev/null; then
+if command yay --version &>/dev/null; then
     yay -Syu --noconfirm --needed \
     extra/nextcloud-client \
     extra/flatpak \
@@ -32,7 +31,15 @@ if command yayd --version &>/dev/null; then
     extra/vlc \
     extra/libreoffice-fresh \
     extra/partitionmanager \
-    extra/obs-studio
+    extra/obs-studio \
+    extra/kdialog \
+    extra/broot \
+    extra/ttf-cascadia-mono-nerd \
+    extra/neovim \
+    extra/lazygit \
+    extra/tree-sitter-cli \
+    extra/fzf \
+    extra/ripgrep
 else
 echo " _   _      _                   ";
 echo "| | | |    | |                  ";
@@ -44,12 +51,10 @@ echo "                                ";
 echo "                                ";
 echo "🚫 Dit script werkt nog niet met jouw pakage manager."
 echo "   We supporten op dit moment alleen yay. Sorry!"
-return
+exit
 fi
 echo "🎉 Installatie van programmas is voltooid!"
-}
 
-programmas_installerern
 sleep 1
 echo "___  ____                _          __  __ ";
 echo "|  \\/  (_)              | |        / _|/ _|";
@@ -67,3 +72,54 @@ echo "📦 Flathub instellen.."
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 echo "📦 Meer installeren met flatpak..."
 flatpak install -y --noninteractive --or-update org.gnome.World.Iotas
+echo "🐮 Broot instellen voor bash..."
+broot --install
+echo "❗ Broot is niet ingesteld op fish!"
+echo "   Dat doen we later wel ;)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo " _   _                             _ ";
+echo "| | | |                           | |";
+echo "| |_| |_   _ _ __ ___   __ _ _ __ | |";
+echo "|  _  | | | | '_ \` _ \\ / _\` | '_ \\| |";
+echo "| | | | |_| | | | | | | (_| | | | |_|";
+echo "\\_| |_/\\__,_|_| |_| |_|\\__,_|_| |_(_)";
+echo "                                     ";
+echo "                                     ";
+echo ""
+echo ""
+echo "We gaan fish starten! ik vaag je om deze commando's uit te voeren:"
+echo ""
+echo "broot --install"
+echo "exit"
+echo ""
+fish
+echo ""
+echo "                                                        ,---,  ";
+echo "       ,--.                                          ,\`--.' |  ";
+echo "   ,--/  /|  ,--,                                    |   :  :  ";
+echo ",---,': / ',--.'|                                    '   '  ;  ";
+echo ":   : '/ / |  | :                             __  ,-.|   |  |  ";
+echo "|   '   ,  :  : '                           ,' ,'/ /|'   :  ;  ";
+echo "'   |  /   |  ' |     ,--.--.      ,--.--.  '  | |' ||   |  '  ";
+echo "|   ;  ;   '  | |    /       \\    /       \\ |  |   ,''   :  |  ";
+echo ":   '   \\  |  | :   .--.  .-. |  .--.  .-. |'  :  /  ;   |  ;  ";
+echo "|   |    ' '  : |__  \\__\\/: . .   \\__\\/: . .|  | '   \`---'. |  ";
+echo "'   : |.  \\|  | '.'| ,\" .--.; |   ,\" .--.; |;  : |    \`--..\`;  ";
+echo "|   | '_\\.';  :    ;/  /  ,.  |  /  /  ,.  ||  , ;   .--,_     ";
+echo "'   : |    |  ,   /;  :   .'   \\;  :   .'   \\---'    |    |\`.  ";
+echo ";   |,'     ---\`-' |  ,     .-./|  ,     .-./        \`-- -\`, ; ";
+echo "'---'               \`--\`---'     \`--\`---'              '---\`\"  ";
+echo "                                                               ";
