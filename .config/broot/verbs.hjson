@@ -118,6 +118,12 @@ verbs: [
         leave_broot: false
         execution: "yadm pull"
     }
+    {
+        invocation: lazygit
+        shortcut: git
+        leave_broot: false
+        execution: "lazygit -p {directory}"
+    }
 
 
     # On ctrl-b, propose the creation of a copy of the selection.
@@ -164,17 +170,18 @@ verbs: [
     # }
 
     # Here's an example of a shortcut bringing you to your home directory
-    # {
-    #     invocation: home
-    #     key: ctrl-home
-    #     execution: ":focus ~"
-    # }
+     {
+         invocation: home
+         key: ctrl-home
+         shortcut: ~
+         execution: ":focus ~"
+     }
 
     # Here's going to the work-dir root of the current git repository
-    # {
-    #     invocation: gtr
-    #     execution: ":focus {git-root}"
-    # }
+     {
+         invocation: gtr
+         execution: ":focus {git-root}"
+     }
 
     # A popular set of shortcuts for going up and down:
     #
