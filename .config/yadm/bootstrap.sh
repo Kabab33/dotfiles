@@ -39,7 +39,9 @@ if command yay --version &>/dev/null; then
     extra/lazygit \
     extra/tree-sitter-cli \
     extra/fzf \
-    extra/ripgrep
+    extra/ripgrep \
+    extra/npm \
+    extra/luarocks
 else
 echo " _   _      _                   ";
 echo "| | | |    | |                  ";
