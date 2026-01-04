@@ -41,7 +41,8 @@ if command yay --version &>/dev/null; then
     extra/fzf \
     extra/ripgrep \
     extra/npm \
-    extra/luarocks
+    extra/luarocks \
+    extra/fisher
 else
 echo " _   _      _                   ";
 echo "| | | |    | |                  ";
@@ -76,38 +77,10 @@ echo "📦 Meer installeren met flatpak..."
 flatpak install -y --noninteractive --or-update org.gnome.World.Iotas
 echo "🐮 Broot instellen voor bash..."
 broot --install
-echo "❗ Broot is niet ingesteld op fish!"
-echo "   Dat doen we later wel ;)"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-echo " _   _                             _ ";
-echo "| | | |                           | |";
-echo "| |_| |_   _ _ __ ___   __ _ _ __ | |";
-echo "|  _  | | | | '_ \` _ \\ / _\` | '_ \\| |";
-echo "| | | | |_| | | | | | | (_| | | | |_|";
-echo "\\_| |_/\\__,_|_| |_| |_|\\__,_|_| |_(_)";
-echo "                                     ";
-echo "                                     ";
-echo ""
-echo ""
-echo "We gaan fish starten! ik vaag je om deze commando's uit te voeren:"
-echo ""
-echo "broot --install"
-echo "exit"
-echo ""
-fish
+echo "🐮 Broot instellen voor fish..."
+fish -c "broot --install"
+echo "🐟 Fish thema instellen..."
+fish -c "fisher install catppuccin/fish"
 echo ""
 echo "                                                        ,---,  ";
 echo "       ,--.                                          ,\`--.' |  ";
