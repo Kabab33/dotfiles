@@ -42,7 +42,9 @@ if command yay --version &>/dev/null; then
     extra/ripgrep \
     extra/npm \
     extra/luarocks \
-    extra/fisher
+    extra/fisher \
+    aur/localsend-bin \
+    extra/python-pipx
 else
 echo " _   _      _                   ";
 echo "| | | |    | |                  ";
@@ -81,6 +83,8 @@ echo "🐮 Broot instellen voor fish..."
 fish -c "broot --install"
 echo "🐟 Fish thema instellen..."
 fish -c "fisher install catppuccin/fish"
+echo "🐱 Kitty thema instellen..."
+kitty +kitten themes --reload-in=all Catppuccin-Mocha
 echo ""
 echo "                                                        ,---,  ";
 echo "       ,--.                                          ,\`--.' |  ";
