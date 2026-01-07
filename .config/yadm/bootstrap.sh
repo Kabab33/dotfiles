@@ -20,7 +20,7 @@ echo "'---'   '---'        \`--'---'   ---\`-' |  ,     .-./---\`-'  ---\`-'   "
 echo "                                        \`--\`---'                     ";
 echo "                                                                     ";
 
-if command yay --version &>/dev/null; then
+if command yay --version &> /dev/null; then
     yay -Syu --noconfirm --needed \
     extra/nextcloud-client \
     extra/flatpak \
@@ -69,22 +69,37 @@ echo "| |  | | \\__ \\ (__  \\__ \\ |_| |_| | | | |_ ";
 echo "\\_|  |_/_|___/\\___| |___/\\__|\\__,_|_| |_(_)";
 echo "                                           ";
 echo "                                           ";
+
 echo "🟦 Bluetooth instellen..."
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
 echo "🟦 bluetooth klaar!"
+
 echo "📦 Flathub instellen.."
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 echo "📦 Meer installeren met flatpak..."
 flatpak install -y --noninteractive --or-update org.gnome.World.Iotas
+
 echo "🐮 Broot instellen voor bash..."
 broot --install
 echo "🐮 Broot instellen voor fish..."
 fish -c "broot --install"
+
 echo "🐟 Fish thema instellen..."
 fish -c "fisher install catppuccin/fish"
 echo "🐱 Kitty thema instellen..."
 kitty +kitten themes --reload-in=all Catppuccin-Mocha
+
+echo "🐍 pipx instellen..."
+pipx ensurepath
+echo "🐍 pipx autocompleet..."
+eval "$(register-python-argcomplete pipx)"
+fish -c "register-python-argcomplete --shell fish pipx >~/.config/fish/completions/pipx.fish"
+
+echo "🐍 Meer met pipx installeren"
+pipx install snowmachine
+
+
 echo ""
 echo "                                                        ,---,  ";
 echo "       ,--.                                          ,\`--.' |  ";
