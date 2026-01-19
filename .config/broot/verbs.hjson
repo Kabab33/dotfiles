@@ -221,5 +221,16 @@ verbs: [
     #     external: "mv {file} {other-panel-directory}"
     #     leave_broot: false
     # }
+
+
+    {
+    invocation: school {vak}
+    shortcut: 3tb {vak}
+    execution: ":focus ~/Documenten/School/! 3TB/{vak}"
+    leave_broot: true
+    }
+# Heel specifiek voor mij maar he
+
+
 ]
 
