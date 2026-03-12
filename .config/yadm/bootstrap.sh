@@ -80,13 +80,15 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 echo "📦 Meer installeren met flatpak..."
 flatpak install -y --noninteractive --or-update org.gnome.World.Iotas
 
-echo "🐮 Broot instellen voor bash..."
+echo "🐮 Broot instellen..."
 broot --install
-echo "🐮 Broot instellen voor fish..."
 fish -c "broot --install"
+touch ~/.config/broot/peronal.hjson
 
-echo "🐟 Fish thema instellen..."
+echo "🐟 Fish instellen..."
 fish -c "fisher install catppuccin/fish"
+fish -c "alias --save yippie=yay"
+
 echo "🐱 Kitty thema instellen..."
 kitty +kitten themes --reload-in=all Catppuccin-Mocha
 
@@ -98,7 +100,6 @@ fish -c "register-python-argcomplete --shell fish pipx >~/.config/fish/completio
 
 echo "🐍 Meer met pipx installeren"
 pipx install snowmachine
-
 
 echo ""
 echo "                                                        ,---,  ";
@@ -117,3 +118,7 @@ echo "'   : |    |  ,   /;  :   .'   \\;  :   .'   \\---'    |    |\`.  ";
 echo ";   |,'     ---\`-' |  ,     .-./|  ,     .-./        \`-- -\`, ; ";
 echo "'---'               \`--\`---'     \`--\`---'              '---\`\"  ";
 echo "                                                               ";
+echo ""
+echo ""
+echo ""
+echo ""

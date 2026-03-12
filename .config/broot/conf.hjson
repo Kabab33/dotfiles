@@ -273,6 +273,7 @@ imports: [
     # Verbs are better configured in verbs.hjson. But you
     # can also add another files for your personal verbs
     verbs.hjson
+    peronal.hjson
 
     # This file contains the skin to use when the terminal
     # is dark (or when this couldn't be determined)
