@@ -44,7 +44,9 @@ if command yay --version &> /dev/null; then
     extra/luarocks \
     extra/fisher \
     aur/localsend-bin \
-    extra/python-pipx
+    extra/python-pipx \
+    extra/python-typer \
+    aur/python-pick
 else
 echo " _   _      _                   ";
 echo "| | | |    | |                  ";
