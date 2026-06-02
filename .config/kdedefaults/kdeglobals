@@ -1,8 +1,8 @@
 [General]
-ColorScheme=BreezeDark
+ColorScheme=Aero
 
 [Icons]
-Theme=breeze-dark
+Theme=Windows 7 Aero
 
 [KDE]
-widgetStyle=Breeze
+widgetStyle=kvantum

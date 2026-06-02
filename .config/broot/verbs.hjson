@@ -124,6 +124,11 @@ verbs: [
         shortcut: git
         leave_broot: false
         execution: "lazygit -p {directory}"
+    },
+    {
+        invocation: "convert {to}"
+        leave_broot: false
+        execution: "python ~/.config/broot/scripts/convert.py {file} {to}"
     }
 
 
