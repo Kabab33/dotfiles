@@ -1,3 +1,6 @@
+[Appearance]
+ColorScheme=catppuccin-mocha
+
 [General]
 Command=/bin/fish
 Name=Fish
