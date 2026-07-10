@@ -1,0 +1,34 @@
+{
+    "workbench.iconTheme": "catppuccin-mocha",
+    "chat.agent.enabled": false,
+    "workbench.editor.empty.hint": "hidden",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "fish (2)": {
+            "path": "/bin/fish"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "fish (2)",
+    "terminal.integrated.initialHint": false,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "workbench.colorTheme": "Catppuccin Mocha"
+}
