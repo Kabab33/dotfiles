@@ -1,96 +1,17 @@
-[Background]
-Color=30,30,46
+--2026-07-10 16:40:11--  https://github.com/catppuccin/konsole/raw/refs/heads/main/themes/catppuccin-mocha.colorscheme
+CA-certificaat '/etc/ssl/certs/ca-certificates.crt' is geladen
+Herleiden van github.com (github.com)... 140.82.121.4
+Verbinding maken met github.com (github.com)|140.82.121.4|:443... verbonden.
+HTTP-verzoek is verzonden; wachten op antwoord... 302 Found
+Locatie: https://raw.githubusercontent.com/catppuccin/konsole/refs/heads/main/themes/catppuccin-mocha.colorscheme [volgen...]
+--2026-07-10 16:40:12--  https://raw.githubusercontent.com/catppuccin/konsole/refs/heads/main/themes/catppuccin-mocha.colorscheme
+Herleiden van raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8003::154, 2606:50c0:8000::154, 2606:50c0:8001::154, ...
+Verbinding maken met raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8003::154|:443... verbonden.
+HTTP-verzoek is verzonden; wachten op antwoord... 200 OK
+Lengte: 1071 (1,0K) [text/plain]
+Wordt opgeslagen als: ‘catppuccin-mocha.colorscheme’
 
-[BackgroundFaint]
-Color=30,30,46
+     0K .                                                     100% 62,3M=0s
 
-[BackgroundIntense]
-Color=30,30,46
+2026-07-10 16:40:12 (62,3 MB/s) - '‘catppuccin-mocha.colorscheme’' opgeslagen [1071/1071]
 
-[Color0]
-Color=108,112,134
-
-[Color0Faint]
-Color=108,112,134
-
-[Color0Intense]
-Color=108,112,134
-
-[Color1]
-Color=243,139,168
-
-[Color1Faint]
-Color=243,139,168
-
-[Color1Intense]
-Color=243,139,168
-
-[Color2]
-Color=166,227,161
-
-[Color2Faint]
-Color=166,227,161
-
-[Color2Intense]
-Color=166,227,161
-
-[Color3]
-Color=249,226,175
-
-[Color3Faint]
-Color=249,226,175
-
-[Color3Intense]
-Color=249,226,175
-
-[Color4]
-Color=137,180,250
-
-[Color4Faint]
-Color=137,180,250
-
-[Color4Intense]
-Color=137,180,250
-
-[Color5]
-Color=203,166,247
-
-[Color5Faint]
-Color=203,166,247
-
-[Color5Intense]
-Color=203,166,247
-
-[Color6]
-Color=137,220,235
-
-[Color6Faint]
-Color=137,220,235
-
-[Color6Intense]
-Color=137,220,235
-
-[Color7]
-Color=205,214,244
-
-[Color7Faint]
-Color=205,214,244
-
-[Color7Intense]
-Color=205,214,244
-
-[Foreground]
-Color=205,214,244
-
-[ForegroundFaint]
-Color=205,214,244
-
-[ForegroundIntense]
-Color=205,214,244
-
-[General]
-Blur=false
-ColorRandomization=false
-Description=Catppuccin Mocha
-Opacity=1
-Wallpaper=
