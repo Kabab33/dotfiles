@@ -48,7 +48,7 @@ if command yay --version &>/dev/null; then
     extra/python-typer \
     aur/python-pick \
     extra/code \
-    extra/wget
+    extra/nim
 else
   echo "Yay niet gevonden :("
   echo "Dus ik ga yay installeren :)"
@@ -105,10 +105,13 @@ fish -c "register-python-argcomplete --shell fish pipx >~/.config/fish/completio
 echo "🐍 Dingen met pipx installeren"
 pipx install snowmachine
 
-echo "🖌️ KDE Thema instellen..."
+echo "🖌️ Extra Thema's instellen..."
 git clone --depth=1 https://github.com/catppuccin/kde /tmp/bootstrap.d/theme/kde
 /tmp/bootstrap.d/theme/kde/install.sh 1 4 1 auto
 
+code --install-extension catppuccin.catppuccin-vsc-pack
+code --install-extension nimsaem.nimvscode
+code --install-extension tombi-toml.tombi
 
 
 
