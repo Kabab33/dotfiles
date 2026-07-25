@@ -48,7 +48,9 @@ if command yay --version &>/dev/null; then
     extra/python-typer \
     aur/python-pick \
     extra/code \
-    extra/nim
+    extra/nim \
+    extra/iotas \
+    extra/micro
 else
   echo "Yay niet gevonden :("
   echo "Dus ik ga yay installeren :)"
@@ -81,8 +83,6 @@ echo "🟦 bluetooth klaar!"
 
 echo "📦 Flathub instellen.."
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-echo "📦 Dingen installeren met flatpak..."
-flatpak install -y --noninteractive --or-update org.gnome.World.Iotas
 
 echo "🐮 Broot instellen..."
 broot --install
